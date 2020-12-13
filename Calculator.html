@@ -1,0 +1,120 @@
+<html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+         /*normal codes*/
+        html,body
+        {
+        	scroll-behavior: smooth;
+        }
+        *
+        {
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins';
+            box-sizing: border-box;
+        }
+        body
+        {
+        	background: #091921;
+        	display: flex;
+        	justify-content: center;
+        	align-items: center;
+        	min-height: 100vh;
+        }
+        .container
+        {
+        	position: relative;
+        	background: rgba(0,0,0,0.2);
+        	display: grid;
+        }
+        .anss
+        {
+        	grid-column: 4;
+        	height: 80px;
+        	font-size: 30px;
+        	text-align: right;
+        	outline: none;
+        	width: 250px;
+        	border-radius: 5px;
+        	border-color: inherit;
+        	color: #000;
+        	text-transform: numbers;
+        }
+        input[type="button"]
+        {
+        	word-spacing: 15px;
+        	text-align: center;
+        	border: 1px solid transparent;
+        	padding: 2px;
+        	outline: none;
+        	margin-left: 18px;
+        }
+        #c-a
+        {
+        	margin-left: 70px;
+        	border: 1px solid rgba(0,0,0,0.2);
+            width: 100px;
+            background: #ff3f81;
+            border-radius: 30px;
+            transition: 0.7s ease;
+        }
+        #c-a:active
+        {
+        	background: lime;
+        }
+        .btn-s
+        {
+        	background: #82d2ee;
+        	border-radius: 40px;
+        }
+        .btn-s:active
+        {
+        	background: #ff3f81;
+        	text-shadow: 0 0 50px #ff3f81,
+        	             0 0 100px #ff3f81,
+        	             0 0 150px #ff3f81,
+        	             0 0 200px #ff3f81,
+        	             0 0 250px #ff3f81;
+        }
+	</style>
+   <div class="container">
+   	<form name="forms">
+   	<input type="text" name="answer" class="anss"> <br>
+
+   	<input type="button" value=" 1 " onclick="forms.answer.value += '1' " class="btn-s">
+   	<input type="button" value=" 2 " onclick="forms.answer.value += '2' " class="btn-s">
+   	<input type="button" value=" 3 " onclick="forms.answer.value += '3' " class="btn-s">
+    <br>
+    <br>
+   	<input type="button" value=" 4 " onclick="forms.answer.value += '4' " class="btn-s">
+   	<input type="button" value=" 5 " onclick="forms.answer.value += '5' " class="btn-s">
+   	<input type="button" value=" 6 " onclick="forms.answer.value += '6' " class="btn-s">
+<br>
+    <br>
+   	<input type="button" value=" 7 " onclick="forms.answer.value += '7' " class="btn-s">
+   	<input type="button" value=" 8 " onclick="forms.answer.value += '8' " class="btn-s">
+   	<input type="button" value=" 9 " onclick="forms.answer.value += '9' " class="btn-s">
+    <br>
+    <br>
+   	<input type="button" value=" + " onclick="forms.answer.value += '+' " class="btn-s">
+   	<input type="button" value=" - " onclick="forms.answer.value += '-' " class="btn-s">
+   	<input type="button" value=" * " onclick="forms.answer.value += '*' " class="btn-s">
+    <br>
+    <br>
+
+   	<input type="button" value=" / " onclick="forms.answer.value += '/' " class="btn-s">
+   	<input type="button" value=" 0 " onclick="forms.answer.value += '0' " class="btn-s">
+   	<input type="button" value=" = " onclick="forms.answer.value = eval(forms.answer.value)" class="btn-s">
+   	<br>
+    <br>
+    <input type="button" value="Clear all" onclick="forms.answer.value = '' " id="c-a">
+   	</form>
+   </div>
+</body>
+</html>
